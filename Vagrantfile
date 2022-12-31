@@ -80,5 +80,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, path: "provision/components/apache.sh"
   config.vm.provision :shell, path: "provision/components/php.sh"
   config.vm.provision :shell, path: "provision/components/mysql.sh"
+  config.vm.provision :shell, path: "provision/components/symfony-cli.sh"
 
 end
