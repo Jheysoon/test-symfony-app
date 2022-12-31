@@ -1,0 +1,10 @@
+# Apache configuration file (see httpd.apache.org/docs/current/mod/quickreference.html)
+
+# disable directory listing
+Options -Indexes
+
+# enable cool URL
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*) index.php [L]
